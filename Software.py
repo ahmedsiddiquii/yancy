@@ -416,8 +416,7 @@ class MainWindow(QMainWindow):
             prev_urls, prev = self.get_items(prev)
             items.extend(prev_urls)
             count += 1
-            if count == 5:
-                break
+
 
         # Save the JSON data for later/inspection.
         with open(os.path.join(self.DESTINATION, 'data.json'), 'w') as fd:
